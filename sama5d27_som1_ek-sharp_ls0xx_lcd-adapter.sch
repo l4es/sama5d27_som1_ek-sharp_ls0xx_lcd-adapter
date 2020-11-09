@@ -1,0 +1,568 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Sharp LS0xx Adapter for SAMA5D27 SOM1 EK"
+Date "2020-11-06"
+Rev "A0"
+Comp "TKVision"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L XF2M-5015-1A:XF2M-5015-1A J1
+U 1 1 5FA41821
+P 2750 2000
+F 0 "J1" H 3750 2387 60  0000 C CNN
+F 1 "XF2M-5015-1A" H 3750 2281 60  0000 C CNN
+F 2 "footprints:XF2M-5015-1A" H 3750 2240 60  0001 C CNN
+F 3 "" H 2750 2000 60  0000 C CNN
+	1    2750 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-1734592-0:1-1734592-0 J2
+U 1 1 5FA444DA
+P 8050 2900
+F 0 "J2" H 8578 2503 60  0000 L CNN
+F 1 "1-1734592-0" H 8578 2397 60  0000 L CNN
+F 2 "footprints:1-1734592-0" H 8450 2440 60  0001 C CNN
+F 3 "" H 8050 2900 60  0000 C CNN
+	1    8050 2900
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2750 2100 1500 2100
+Wire Wire Line
+	2750 2600 1500 2600
+Wire Wire Line
+	2750 3100 1500 3100
+Wire Wire Line
+	2750 3600 1500 3600
+Wire Wire Line
+	2750 4100 1500 4100
+Wire Wire Line
+	4750 4000 6000 4000
+Wire Wire Line
+	8050 2200 7250 2200
+Wire Wire Line
+	8050 2300 7250 2300
+Wire Wire Line
+	4750 2100 6000 2100
+Wire Wire Line
+	4750 2000 6000 2000
+$Comp
+L power:GND #PWR0101
+U 1 1 5FA74639
+P 1500 5000
+F 0 "#PWR0101" H 1500 4750 50  0001 C CNN
+F 1 "GND" H 1505 4827 50  0000 C CNN
+F 2 "" H 1500 5000 50  0001 C CNN
+F 3 "" H 1500 5000 50  0001 C CNN
+	1    1500 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2100 1500 2600
+Wire Wire Line
+	1500 2600 1500 3100
+Connection ~ 1500 2600
+Wire Wire Line
+	1500 3100 1500 3600
+Connection ~ 1500 3100
+Wire Wire Line
+	1500 3600 1500 4100
+Connection ~ 1500 3600
+Wire Wire Line
+	1500 4100 1500 5000
+Connection ~ 1500 4100
+Wire Wire Line
+	6000 2000 6000 2100
+Connection ~ 6000 2100
+Wire Wire Line
+	6000 4000 6000 4500
+Connection ~ 6000 4000
+$Comp
+L power:GND #PWR0102
+U 1 1 5FA81079
+P 6000 5000
+F 0 "#PWR0102" H 6000 4750 50  0001 C CNN
+F 1 "GND" H 6005 4827 50  0000 C CNN
+F 2 "" H 6000 5000 50  0001 C CNN
+F 3 "" H 6000 5000 50  0001 C CNN
+	1    6000 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4500 6000 5000
+Connection ~ 6000 4500
+Wire Wire Line
+	2750 4500 1700 4500
+Wire Wire Line
+	2750 4400 1700 4400
+Wire Wire Line
+	2750 4300 1700 4300
+Wire Wire Line
+	2750 4200 1700 4200
+Wire Wire Line
+	2750 4000 1700 4000
+Wire Wire Line
+	2750 3900 1700 3900
+Wire Wire Line
+	2750 3800 1700 3800
+Wire Wire Line
+	2750 3700 1700 3700
+Wire Wire Line
+	2750 3500 1700 3500
+Wire Wire Line
+	2750 3400 1700 3400
+Wire Wire Line
+	2750 3300 1700 3300
+Wire Wire Line
+	2750 3200 1700 3200
+Wire Wire Line
+	2750 3000 1700 3000
+Wire Wire Line
+	2750 2900 1700 2900
+Wire Wire Line
+	2750 2800 1700 2800
+Wire Wire Line
+	2750 2700 1700 2700
+Wire Wire Line
+	2750 2200 1700 2200
+Wire Wire Line
+	2750 2300 1700 2300
+Wire Wire Line
+	2750 2400 1700 2400
+Wire Wire Line
+	2750 2500 1700 2500
+Wire Wire Line
+	2750 2000 1700 2000
+Wire Wire Line
+	4750 2500 5850 2500
+Wire Wire Line
+	4750 2600 5850 2600
+Wire Wire Line
+	4750 2700 5850 2700
+Wire Wire Line
+	4750 2800 5850 2800
+Wire Wire Line
+	4750 2900 5850 2900
+Wire Wire Line
+	4750 3000 5850 3000
+Wire Wire Line
+	4750 3100 5850 3100
+Wire Wire Line
+	4750 3200 5850 3200
+Wire Wire Line
+	4750 3300 5850 3300
+Wire Wire Line
+	4750 3400 5850 3400
+Wire Wire Line
+	4750 3500 5850 3500
+Wire Wire Line
+	4750 3600 5850 3600
+Wire Wire Line
+	4750 3700 5850 3700
+Wire Wire Line
+	4750 3800 5850 3800
+Wire Wire Line
+	4750 3900 5850 3900
+Wire Wire Line
+	4750 4100 5850 4100
+Wire Wire Line
+	4750 4200 5850 4200
+Wire Wire Line
+	4750 4300 5850 4300
+Wire Wire Line
+	4750 4400 5850 4400
+Wire Wire Line
+	6000 2100 6000 2200
+Wire Wire Line
+	4750 2200 6000 2200
+Connection ~ 6000 2200
+Text Label 4800 2500 0    50   ~ 0
+NRST
+Text Label 4800 2700 0    50   ~ 0
+IRQ2
+Text Label 4800 2800 0    50   ~ 0
+IRQ1
+Text Label 4800 2900 0    50   ~ 0
+TWCK_LCD
+Text Label 4800 3000 0    50   ~ 0
+TWD_LCD
+Text Label 4800 3100 0    50   ~ 0
+LCD_DISP_DISP
+Text Label 4800 3200 0    50   ~ 0
+SPI0_NPCS0_SCS
+Text Label 4800 3300 0    50   ~ 0
+SPI0_MISO
+Text Label 4800 3400 0    50   ~ 0
+SPI0_MOSI_SI
+Text Label 4800 3500 0    50   ~ 0
+SPI0_SPCK_SCK
+Text Label 4800 3600 0    50   ~ 0
+LCD_EN
+Text Label 4800 3700 0    50   ~ 0
+LCD_HSYNC
+Text Label 4800 3800 0    50   ~ 0
+LCD_VSYNC
+Text Label 4800 3900 0    50   ~ 0
+LCD_PCK
+Text Label 4800 4100 0    50   ~ 0
+LCD_DAT23
+Text Label 4800 4200 0    50   ~ 0
+LCD_DAT22
+Text Label 4800 4300 0    50   ~ 0
+LCD_DAT21
+Text Label 4800 4400 0    50   ~ 0
+LCD_DAT20
+Text Label 1850 4500 0    50   ~ 0
+LCD_DAT19
+Text Label 1850 4400 0    50   ~ 0
+LCD_DAT18
+Text Label 1850 4300 0    50   ~ 0
+LCD_DAT17
+Text Label 1850 4200 0    50   ~ 0
+LCD_DAT16
+Text Label 1850 4000 0    50   ~ 0
+LCD_DAT15
+Text Label 1850 3900 0    50   ~ 0
+LCD_DAT14
+Text Label 1850 3800 0    50   ~ 0
+LCD_DAT13
+Text Label 1850 3700 0    50   ~ 0
+LCD_DAT12
+Text Label 1850 3500 0    50   ~ 0
+LCD_DAT11
+Text Label 1850 3400 0    50   ~ 0
+LCD_DAT10
+Text Label 1850 3300 0    50   ~ 0
+LCD_DAT9
+Text Label 1850 3200 0    50   ~ 0
+LCD_DAT8
+Text Label 1850 3000 0    50   ~ 0
+LCD_DAT7
+Text Label 1850 2900 0    50   ~ 0
+LCD_DAT6
+Text Label 1850 2800 0    50   ~ 0
+LCD_DAT5
+Text Label 1850 2700 0    50   ~ 0
+LCD_DAT4
+Text Label 1850 2500 0    50   ~ 0
+LCD_DAT3
+Text Label 1850 2400 0    50   ~ 0
+LCD_DAT2
+Text Label 1850 2300 0    50   ~ 0
+LCD_DAT1
+Text Label 7350 2000 0    50   ~ 0
+SPI0_SPCK_SCK
+Text Label 7350 2100 0    50   ~ 0
+SPI0_MOSI_SI
+Text Label 7350 2200 0    50   ~ 0
+SPI0_NPCS0_SCS
+Text Label 7350 2300 0    50   ~ 0
+EXTCOMIN
+Text Label 7350 2400 0    50   ~ 0
+LCD_DISP_DISP
+Wire Wire Line
+	8050 2700 7250 2700
+Text Label 7400 2700 0    50   ~ 0
+EXTMODE
+Wire Wire Line
+	7250 2600 7200 2600
+$Comp
+L power:+5V #PWR0104
+U 1 1 5FAFECB5
+P 5800 2400
+F 0 "#PWR0104" H 5800 2250 50  0001 C CNN
+F 1 "+5V" H 5815 2573 50  0000 C CNN
+F 2 "" H 5800 2400 50  0001 C CNN
+F 3 "" H 5800 2400 50  0001 C CNN
+	1    5800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 5FB01D59
+P 7200 2600
+F 0 "#PWR0105" H 7200 2450 50  0001 C CNN
+F 1 "+5V" H 7215 2773 50  0000 C CNN
+F 2 "" H 7200 2600 50  0001 C CNN
+F 3 "" H 7200 2600 50  0001 C CNN
+	1    7200 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FB03613
+P 6650 2650
+F 0 "C1" H 6765 2696 50  0000 L CNN
+F 1 "560pF" H 6765 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6688 2500 50  0001 C CNN
+F 3 "~" H 6650 2650 50  0001 C CNN
+	1    6650 2650
+	1    0    0    -1  
+$EndComp
+Text Notes 6050 2650 0    22   ~ 0
+C1 : KEMET 0603 (1608M) 560pF \nMultilayer Ceramic Capacitor\nMLCC 50V dc ±5% SMD \nC0603C561J5GACTU
+Wire Wire Line
+	7250 2500 7250 2600
+Wire Wire Line
+	8050 2500 7250 2500
+Wire Wire Line
+	8050 2600 7250 2600
+Connection ~ 7250 2600
+Wire Wire Line
+	6650 2400 8050 2400
+NoConn ~ 1700 2300
+NoConn ~ 1700 2400
+NoConn ~ 1700 2500
+NoConn ~ 1700 2700
+NoConn ~ 1700 2800
+NoConn ~ 1700 2900
+NoConn ~ 1700 3000
+NoConn ~ 1700 3200
+NoConn ~ 1700 3300
+NoConn ~ 1700 3400
+NoConn ~ 1700 3500
+NoConn ~ 1700 3700
+NoConn ~ 1700 3800
+NoConn ~ 1700 3900
+NoConn ~ 1700 4000
+NoConn ~ 1700 4200
+NoConn ~ 1700 4300
+NoConn ~ 1700 4400
+NoConn ~ 1700 4500
+NoConn ~ 5850 4400
+NoConn ~ 5850 4300
+NoConn ~ 5850 4200
+NoConn ~ 5850 4100
+NoConn ~ 5850 3300
+$Comp
+L Device:C C3
+U 1 1 5FB24AF7
+P 7150 4150
+F 0 "C3" H 7265 4196 50  0000 L CNN
+F 1 "1uF" H 7265 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7188 4000 50  0001 C CNN
+F 3 "~" H 7150 4150 50  0001 C CNN
+	1    7150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FB25EC1
+P 6650 4150
+F 0 "C2" H 6765 4196 50  0000 L CNN
+F 1 "1uF" H 6765 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6688 4000 50  0001 C CNN
+F 3 "~" H 6650 4150 50  0001 C CNN
+	1    6650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4000 6650 3800
+Wire Wire Line
+	7150 3800 7150 4000
+Wire Wire Line
+	7150 4500 7150 4300
+$Comp
+L power:+5V #PWR0106
+U 1 1 5FB3F84A
+P 7150 3700
+F 0 "#PWR0106" H 7150 3550 50  0001 C CNN
+F 1 "+5V" H 7165 3873 50  0000 C CNN
+F 2 "" H 7150 3700 50  0001 C CNN
+F 3 "" H 7150 3700 50  0001 C CNN
+	1    7150 3700
+	1    0    0    -1  
+$EndComp
+Text Notes 6250 3750 0    22   ~ 0
+C2, C3 : 0805 1 uF 50 V ±10 % Tolerance \nX7R SMT Multilayer Ceramic Capacitor \n(Yageo CC0805KKX7R9BB105)\n\nC2 : placed btw VDDA - VSSA,\nC3 : placed btw VDD - VSS
+Connection ~ 7150 4500
+Connection ~ 7150 3800
+Text Label 7650 3900 0    50   ~ 0
+EXTMODE
+Wire Wire Line
+	7150 4500 7500 4500
+Wire Wire Line
+	7500 4000 7500 4500
+Connection ~ 7500 4500
+Text Label 7650 4400 0    50   ~ 0
+EXTCOMIN
+NoConn ~ 4750 850 
+Wire Wire Line
+	4750 4500 6000 4500
+Wire Wire Line
+	6650 3800 7150 3800
+Wire Wire Line
+	7150 3800 7150 3700
+Wire Wire Line
+	7250 2800 7250 2900
+Wire Wire Line
+	7250 2800 8050 2800
+Wire Wire Line
+	7250 2900 8050 2900
+Text Label 1850 2200 0    50   ~ 0
+LCD_DAT0
+NoConn ~ 1700 2200
+Text Label 1850 2000 0    50   ~ 0
+PA17
+NoConn ~ 1700 2000
+Text Label 4800 2600 0    50   ~ 0
+LCD_PWM
+Text Label 7650 4300 0    50   ~ 0
+LCD_PWM
+NoConn ~ 5850 3900
+NoConn ~ 5850 3800
+NoConn ~ 5850 3700
+Wire Wire Line
+	8700 3800 8800 3800
+Wire Wire Line
+	8800 3800 8800 3900
+Wire Wire Line
+	7500 4000 8400 4000
+Wire Wire Line
+	7600 3900 8800 3900
+Connection ~ 8800 3900
+Wire Wire Line
+	7600 4300 8400 4300
+Wire Wire Line
+	8700 4300 8800 4300
+Wire Wire Line
+	8800 4500 8700 4500
+Wire Wire Line
+	7500 4500 8400 4500
+Wire Wire Line
+	7600 4400 8800 4400
+Wire Wire Line
+	8800 4300 8800 4400
+Connection ~ 8800 4400
+Wire Wire Line
+	8800 4400 8800 4500
+Wire Wire Line
+	8800 3900 8800 4000
+Wire Wire Line
+	8800 4000 8700 4000
+Wire Wire Line
+	4750 2300 5050 2300
+Wire Wire Line
+	4750 2400 5050 2400
+Wire Wire Line
+	5050 2400 5050 2300
+Connection ~ 5050 2300
+Wire Wire Line
+	5050 2300 5250 2300
+Wire Wire Line
+	5550 2300 5550 2400
+Wire Wire Line
+	5550 2400 5800 2400
+$Comp
+L Device:R_US R5
+U 1 1 5FAB434C
+P 8550 4500
+F 0 "R5" V 8600 4350 50  0000 C CNN
+F 1 "0" V 8600 4700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8590 4490 50  0001 C CNN
+F 3 "~" H 8550 4500 50  0001 C CNN
+	1    8550 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 2200 6000 4000
+$Comp
+L Device:R_US R1
+U 1 1 5FABCBF9
+P 5400 2300
+F 0 "R1" V 5450 2150 50  0000 C CNN
+F 1 "0" V 5450 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5440 2290 50  0001 C CNN
+F 3 "~" H 5400 2300 50  0001 C CNN
+	1    5400 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FAB0F10
+P 8550 3800
+F 0 "R2" V 8500 3650 50  0000 C CNN
+F 1 "5k6" V 8500 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8590 3790 50  0001 C CNN
+F 3 "~" H 8550 3800 50  0001 C CNN
+	1    8550 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5FAE3964
+P 6650 3000
+F 0 "#PWR0103" H 6650 2750 50  0001 C CNN
+F 1 "GND" H 6655 2827 50  0000 C CNN
+F 2 "" H 6650 3000 50  0001 C CNN
+F 3 "" H 6650 3000 50  0001 C CNN
+	1    6650 3000
+	1    0    0    -1  
+$EndComp
+Connection ~ 7250 2900
+Wire Wire Line
+	6650 3000 6650 2900
+Wire Wire Line
+	6650 2800 6650 2900
+Connection ~ 6650 2900
+Wire Wire Line
+	6650 2900 7250 2900
+$Comp
+L Device:R_US R3
+U 1 1 5FAB2BF0
+P 8550 4000
+F 0 "R3" V 8600 3850 50  0000 C CNN
+F 1 "0" V 8600 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8590 3990 50  0001 C CNN
+F 3 "~" H 8550 4000 50  0001 C CNN
+	1    8550 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R4
+U 1 1 5FAB362A
+P 8550 4300
+F 0 "R4" V 8500 4150 50  0000 C CNN
+F 1 "0" V 8500 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8590 4290 50  0001 C CNN
+F 3 "~" H 8550 4300 50  0001 C CNN
+	1    8550 4300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 2400 6650 2500
+Wire Wire Line
+	6000 4500 6650 4500
+Wire Wire Line
+	6650 4500 7150 4500
+Connection ~ 6650 4500
+Wire Wire Line
+	6650 4300 6650 4500
+Wire Wire Line
+	7150 3800 8400 3800
+Wire Wire Line
+	8050 2000 7250 2000
+Wire Wire Line
+	8050 2100 7250 2100
+Text Notes 8650 2950 0    50   ~ 0
+To pin #10 of LCD cable, rear surface.
+Text Notes 8650 2000 0    50   ~ 0
+To pin #1 of LCD cable, rear surface.
+Text Notes 4700 1950 0    50   ~ 0
+R1 is mandatory, \nand used to replaced a jumper for easier routing.
+Text Notes 8850 4350 0    50   ~ 0
+If R2 is placed (i.e. EXTMODE = Hi) -> R4 is placed \n(i.e. EXTCOMIN is driven from external - LCD_PWM)\n\nIf R3 is placed  (i.e. EXTMODE = Lo) -> R5 is placed\n(i.e. SW clock is selected -  change VCOM command)
+Text Notes 6200 2250 0    39   ~ 0
+SCLK, SI, SCS, DISP, EXTCOMIN :\n - VIH : [+2.7v, 3.0v, VDD]\n - VIL : [VSS, VSS, VSS+0.14]
+Text Label 5100 2300 0    50   ~ 0
+5V
+$EndSCHEMATC
