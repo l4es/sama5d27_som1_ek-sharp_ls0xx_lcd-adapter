@@ -1,4 +1,4 @@
-update=Thứ sáu, 06 Tháng mười một Năm 2020 07:34:01 +07
+update=Thứ ba, 10 Tháng mười một Năm 2020 10:59:28 +07
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=sam5d27_som1_ek-sharp_ls0xx_lcd-adapter.net
+LastNetListRead=sama5d27_som1_ek-sharp_ls0xx_lcd-adapter.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -233,7 +233,7 @@ Enabled=1
 [pcbnew/Layer.F.Fab]
 Enabled=1
 [pcbnew/Layer.Rescue]
-Enabled=1
+Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default

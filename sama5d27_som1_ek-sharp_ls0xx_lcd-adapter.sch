@@ -24,17 +24,6 @@ F 3 "" H 2750 2000 60  0000 C CNN
 	1    2750 2000
 	1    0    0    -1  
 $EndComp
-$Comp
-L 1-1734592-0:1-1734592-0 J2
-U 1 1 5FA444DA
-P 8050 2900
-F 0 "J2" H 8578 2503 60  0000 L CNN
-F 1 "1-1734592-0" H 8578 2397 60  0000 L CNN
-F 2 "footprints:1-1734592-0" H 8450 2440 60  0001 C CNN
-F 3 "" H 8050 2900 60  0000 C CNN
-	1    8050 2900
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	2750 2100 1500 2100
 Wire Wire Line
@@ -48,9 +37,9 @@ Wire Wire Line
 Wire Wire Line
 	4750 4000 6000 4000
 Wire Wire Line
-	8050 2200 7250 2200
+	8050 2500 7250 2500
 Wire Wire Line
-	8050 2300 7250 2300
+	8050 2600 7250 2600
 Wire Wire Line
 	4750 2100 6000 2100
 Wire Wire Line
@@ -259,22 +248,20 @@ Text Label 1850 2400 0    50   ~ 0
 LCD_DAT2
 Text Label 1850 2300 0    50   ~ 0
 LCD_DAT1
-Text Label 7350 2000 0    50   ~ 0
-SPI0_SPCK_SCK
-Text Label 7350 2100 0    50   ~ 0
-SPI0_MOSI_SI
-Text Label 7350 2200 0    50   ~ 0
-SPI0_NPCS0_SCS
 Text Label 7350 2300 0    50   ~ 0
-EXTCOMIN
+SPI0_SPCK_SCK
 Text Label 7350 2400 0    50   ~ 0
+SPI0_MOSI_SI
+Text Label 7350 2500 0    50   ~ 0
+SPI0_NPCS0_SCS
+Text Label 7350 2600 0    50   ~ 0
+EXTCOMIN
+Text Label 7350 2700 0    50   ~ 0
 LCD_DISP_DISP
 Wire Wire Line
-	8050 2700 7250 2700
-Text Label 7400 2700 0    50   ~ 0
+	10850 2700 10050 2700
+Text Label 10200 2700 0    50   ~ 0
 EXTMODE
-Wire Wire Line
-	7250 2600 7200 2600
 $Comp
 L power:+5V #PWR0104
 U 1 1 5FAFECB5
@@ -289,36 +276,16 @@ $EndComp
 $Comp
 L power:+5V #PWR0105
 U 1 1 5FB01D59
-P 7200 2600
-F 0 "#PWR0105" H 7200 2450 50  0001 C CNN
-F 1 "+5V" H 7215 2773 50  0000 C CNN
-F 2 "" H 7200 2600 50  0001 C CNN
-F 3 "" H 7200 2600 50  0001 C CNN
-	1    7200 2600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:C C1
-U 1 1 5FB03613
-P 6650 2650
-F 0 "C1" H 6765 2696 50  0000 L CNN
-F 1 "560pF" H 6765 2605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6688 2500 50  0001 C CNN
-F 3 "~" H 6650 2650 50  0001 C CNN
-	1    6650 2650
+P 7250 2950
+F 0 "#PWR0105" H 7250 2800 50  0001 C CNN
+F 1 "+5V" H 7265 3123 50  0000 C CNN
+F 2 "" H 7250 2950 50  0001 C CNN
+F 3 "" H 7250 2950 50  0001 C CNN
+	1    7250 2950
 	1    0    0    -1  
 $EndComp
-Text Notes 6050 2650 0    22   ~ 0
-C1 : KEMET 0603 (1608M) 560pF \nMultilayer Ceramic Capacitor\nMLCC 50V dc ±5% SMD \nC0603C561J5GACTU
 Wire Wire Line
-	7250 2500 7250 2600
-Wire Wire Line
-	8050 2500 7250 2500
-Wire Wire Line
-	8050 2600 7250 2600
-Connection ~ 7250 2600
-Wire Wire Line
-	6650 2400 8050 2400
+	6650 2700 8050 2700
 NoConn ~ 1700 2300
 NoConn ~ 1700 2400
 NoConn ~ 1700 2500
@@ -402,12 +369,6 @@ Wire Wire Line
 	6650 3800 7150 3800
 Wire Wire Line
 	7150 3800 7150 3700
-Wire Wire Line
-	7250 2800 7250 2900
-Wire Wire Line
-	7250 2800 8050 2800
-Wire Wire Line
-	7250 2900 8050 2900
 Text Label 1850 2200 0    50   ~ 0
 LCD_DAT0
 NoConn ~ 1700 2200
@@ -473,8 +434,6 @@ F 3 "~" H 8550 4500 50  0001 C CNN
 	1    8550 4500
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6000 2200 6000 4000
 $Comp
 L Device:R_US R1
 U 1 1 5FABCBF9
@@ -498,25 +457,6 @@ F 3 "~" H 8550 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0103
-U 1 1 5FAE3964
-P 6650 3000
-F 0 "#PWR0103" H 6650 2750 50  0001 C CNN
-F 1 "GND" H 6655 2827 50  0000 C CNN
-F 2 "" H 6650 3000 50  0001 C CNN
-F 3 "" H 6650 3000 50  0001 C CNN
-	1    6650 3000
-	1    0    0    -1  
-$EndComp
-Connection ~ 7250 2900
-Wire Wire Line
-	6650 3000 6650 2900
-Wire Wire Line
-	6650 2800 6650 2900
-Connection ~ 6650 2900
-Wire Wire Line
-	6650 2900 7250 2900
-$Comp
 L Device:R_US R3
 U 1 1 5FAB2BF0
 P 8550 4000
@@ -539,8 +479,6 @@ F 3 "~" H 8550 4300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6650 2400 6650 2500
-Wire Wire Line
 	6000 4500 6650 4500
 Wire Wire Line
 	6650 4500 7150 4500
@@ -550,19 +488,113 @@ Wire Wire Line
 Wire Wire Line
 	7150 3800 8400 3800
 Wire Wire Line
-	8050 2000 7250 2000
+	8050 2300 7250 2300
 Wire Wire Line
-	8050 2100 7250 2100
-Text Notes 8650 2950 0    50   ~ 0
-To pin #10 of LCD cable, rear surface.
-Text Notes 8650 2000 0    50   ~ 0
-To pin #1 of LCD cable, rear surface.
-Text Notes 4700 1950 0    50   ~ 0
+	8050 2400 7250 2400
+Text Notes 4700 1900 0    50   ~ 0
 R1 is mandatory, \nand used to replaced a jumper for easier routing.
 Text Notes 8850 4350 0    50   ~ 0
 If R2 is placed (i.e. EXTMODE = Hi) -> R4 is placed \n(i.e. EXTCOMIN is driven from external - LCD_PWM)\n\nIf R3 is placed  (i.e. EXTMODE = Lo) -> R5 is placed\n(i.e. SW clock is selected -  change VCOM command)
-Text Notes 6200 2250 0    39   ~ 0
+Text Notes 6200 2600 0    39   ~ 0
 SCLK, SI, SCS, DISP, EXTCOMIN :\n - VIH : [+2.7v, 3.0v, VDD]\n - VIL : [VSS, VSS, VSS+0.14]
 Text Label 5100 2300 0    50   ~ 0
 5V
+$Comp
+L power:GND #PWR0103
+U 1 1 5FAE3964
+P 10400 2300
+F 0 "#PWR0103" H 10400 2050 50  0001 C CNN
+F 1 "GND" H 10405 2127 50  0000 C CNN
+F 2 "" H 10400 2300 50  0001 C CNN
+F 3 "" H 10400 2300 50  0001 C CNN
+	1    10400 2300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10400 2300 10200 2300
+$Comp
+L power:+5V #PWR0107
+U 1 1 5FB55A7B
+P 10850 2950
+F 0 "#PWR0107" H 10850 2800 50  0001 C CNN
+F 1 "+5V" H 10865 3123 50  0000 C CNN
+F 2 "" H 10850 2950 50  0001 C CNN
+F 3 "" H 10850 2950 50  0001 C CNN
+	1    10850 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10850 2950 10850 3000
+Wire Wire Line
+	10850 3000 10200 3000
+Wire Wire Line
+	10200 3000 10200 2800
+Wire Wire Line
+	10200 2800 10050 2800
+Wire Wire Line
+	7250 3000 7900 3000
+Wire Wire Line
+	7900 3000 7900 2800
+Wire Wire Line
+	7900 2800 8050 2800
+Wire Wire Line
+	7250 2950 7250 3000
+$Comp
+L 51441-1093:51441-1093 J2
+U 1 1 5FAA475B
+P 8050 2300
+F 0 "J2" H 9050 2687 60  0000 C CNN
+F 1 "51441-1093" H 9050 2581 60  0000 C CNN
+F 2 "footprints:51441-1093" H 9050 2540 60  0001 C CNN
+F 3 "" H 8050 2300 60  0000 C CNN
+	1    8050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 2400 10200 2400
+Wire Wire Line
+	10200 2400 10200 2300
+Wire Wire Line
+	10050 2300 10200 2300
+Connection ~ 10200 2300
+Wire Wire Line
+	10050 2500 10200 2500
+Wire Wire Line
+	10200 2500 10200 2400
+Connection ~ 10200 2400
+Wire Wire Line
+	10050 2600 10200 2600
+Wire Wire Line
+	10200 2600 10200 2500
+Connection ~ 10200 2500
+Wire Wire Line
+	6650 2700 6650 2800
+Text Notes 6750 3250 0    22   ~ 0
+C1 : KEMET 0603 (1608M) 560pF \nMultilayer Ceramic Capacitor\nMLCC 50V dc ±5% SMD \nC0603C561J5GACTU
+$Comp
+L Device:C C1
+U 1 1 5FB03613
+P 6650 2950
+F 0 "C1" H 6765 2996 50  0000 L CNN
+F 1 "560pF" H 6765 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6688 2800 50  0001 C CNN
+F 3 "~" H 6650 2950 50  0001 C CNN
+	1    6650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2200 6000 3300
+Wire Wire Line
+	6000 3300 6650 3300
+Wire Wire Line
+	6650 3300 6650 3100
+Connection ~ 6000 3300
+Wire Wire Line
+	6000 3300 6000 4000
+NoConn ~ 5850 2500
+NoConn ~ 5850 2700
+NoConn ~ 5850 2800
+NoConn ~ 5850 2900
+NoConn ~ 5850 3000
+NoConn ~ 5850 3600
 $EndSCHEMATC
