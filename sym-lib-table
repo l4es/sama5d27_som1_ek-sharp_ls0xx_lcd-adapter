@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name 1-1734592-0)(type Legacy)(uri ${KIPRJMOD}/lib_sch/1-1734592-0.lib)(options "")(descr ""))
+  (lib (name 51441-1093)(type Legacy)(uri ${KIPRJMOD}/lib_sch/51441-1093.lib)(options "")(descr ""))
+  (lib (name XF2M-5015-1A)(type Legacy)(uri ${KIPRJMOD}/lib_sch/XF2M-5015-1A.lib)(options "")(descr ""))
+)
